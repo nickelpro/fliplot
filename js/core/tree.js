@@ -64,6 +64,12 @@ export class Tree {
         delete this.nodes[node.id]
     }
 
+    clearAll() {
+        for(const id in this.nodes) {
+            delete this.nodes[id]
+        }
+    }
+
     move(node, pos, parent, force=false){
         node = this.get(node);
         if(!parent){

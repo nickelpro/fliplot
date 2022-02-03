@@ -166,6 +166,7 @@ export class Wave {
   }
 
   clearAll() {
+    d3.selectAll('.signalRow').remove(); 
   }
 
   selectRow(rowId, select=true) {

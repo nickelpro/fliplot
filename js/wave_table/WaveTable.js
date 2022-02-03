@@ -41,6 +41,7 @@ export class WaveTable {
   }
 
   clearAll() {
+    this.tree.clearAll();
     this.nameCol.clearAll();
     this.valueCol.clearAll();
     this.wave.clearAll();

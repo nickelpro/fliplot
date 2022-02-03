@@ -53,7 +53,7 @@ $("#zoom-out").click(() => {
 });
 
 $("#remove-all").click(() => {
-  waveTable.removeAllSignals();
+  waveTable.clearAll();
 });
 
 $("#cursor-to-0").click(() => {
