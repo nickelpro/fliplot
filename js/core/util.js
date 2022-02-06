@@ -24,7 +24,7 @@
  
 function Bin2Hex2(n){
     const ret = Bin2Hex(n)
-    if(isNaN(ret)){
+    if(isNaN(ret) && typeof(ret)=="number"){
         // TODO: Should be splitted and converted by 4 bits.
         return 'x'.repeat(Math.ceil(n.length / 4));
     } else{
